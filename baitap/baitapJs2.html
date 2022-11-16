@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findmax() {
+            let number1 = parseInt(prompt("nhập số thứ nhất"));
+            let number2 = parseInt(prompt("nhập số thứ hai"));
+            let number3 = parseInt(prompt("nhập số thứ ba"));
+            let max = 0;
+
+            max = number1;
+            if (number1 > number2 && number1 > number3) {
+                alert("số lớn nhất là:" + number1);
+            }
+            else if (number1 < number2 && number1 > number3) {
+                alert("số lớn nhất là:" + number2)
+            }
+            else if (number1 > number2 && number1 < number3) {
+                alert("số lớn nhất là:" + number3)
+            }
+        }
+      findmax()
+    </script>
+
+
+     
+</body >
+</html >

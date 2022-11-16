@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(42, 40, 40);
+            color: aliceblue;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(87, 87, 87);
+        }
+
+        nav :hover{
+           
+            background-color: rgb(26, 190, 26);    
+        }
+        nav{
+             text-align: center;
+        }
+
+        article {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sơ yếu lí lịch</h1>
+        <hr>
+        <hr>
+    </header>
+
+
+    <section>
+        <article class="information">
+            <h2>_Thông tin cá nhân_</h2>
+            <div class="yourname"></div>
+            <h3>Họ và tên: <span id="fullname"></span></h3>
+            <h3>Tuổi: <span id="age"></span></h3>
+            <h3>Giới tính: <span id="gender"></span></h3>
+        </article>
+
+        <br><br><br>
+
+        <article class="academy level">
+            <h2>_Trình độ học vấn_</h2>
+            <div class="youracademylevel"></div>
+            <h3>Văn hoá: <span id="culture"></span></h3>
+            <h3>Học vấn: <span id="education"></span></h3>
+        </article>
+
+        <br><br><br>
+
+      <article class="profession">
+        <h2>_Nghề nghiệp_</h2>
+        <div class="yourprofession"></div>
+        <h3>Công việc 1 : <span id="job1"></span></h3>
+        <h3>Công việc 2 : <span id="job2"></span></h3>
+
+      </article>
+
+
+        <nav>
+            <button onclick="myif()">Nhập</button>
+        </nav>
+    </section>
+</body>
+
+<script>
+    function myif() {
+        document.getElementById("fullname").innerHTML = prompt("Nhập tên của bạn");
+        document.getElementById("age").innerHTML = prompt("Nhập tuổi của bạn");
+        document.getElementById("gender").innerHTML = prompt("Nhập giới tính");
+        document.getElementById("culture").innerHTML = prompt("Văn hoá của bạn là")
+        document.getElementById("education").innerHTML = prompt("Trình độ học vấn của bạn")
+        document.getElementById("job1").innerHTML = prompt("Công việc hiện tại của bạn là gì")
+        document.getElementById("job2").innerHTML = prompt("Công việc khác của bạn")
+    }
+</script>
+
+</html>
